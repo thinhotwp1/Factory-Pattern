@@ -10,16 +10,14 @@ import FactoryPattern.Pizza.VeggiePizzaNY;
 
 /**
  *
- * @author Administrator
+ * @author ThinhLD
  */
 public class NYStylePizzaStore extends PizzaStore {
 
     public NYStylePizzaStore() {
     }
-    
 
     public Pizza createPizza(String type) {
-
         Pizza pizza;
         switch (type) {
             case "cheese":

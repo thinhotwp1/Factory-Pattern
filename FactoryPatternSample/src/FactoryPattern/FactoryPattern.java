@@ -10,7 +10,7 @@ import FactoryPattern.pizzastore.PizzaStore;
 
 /**
  *
- * @author Administrator
+ * @author ThinhLD
  */
 public class FactoryPattern {
 

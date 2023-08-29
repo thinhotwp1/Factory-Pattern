@@ -6,7 +6,7 @@ package FactoryPattern.Pizza;
 
 /**
  *
- * @author Administrator
+ * @author ThinhLD
  */
 public abstract class Pizza {
 

@@ -12,7 +12,7 @@ import FactoryPattern.Pizza.VeggiePizzaNY;
 
 /**
  *
- * @author Administrator
+ * @author ThinhLD
  */
 public class ChicagoStylePizzaStore extends PizzaStore {
 
