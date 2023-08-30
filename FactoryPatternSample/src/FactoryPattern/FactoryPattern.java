@@ -19,7 +19,14 @@ public class FactoryPattern {
 
     /**
      * @param args
-     * Factory pattern sample: DI-Dependency Injection
+     * - Factory pattern sample: DI-Dependency Injection
+
+     * - Ngoài ra có thể sử dụng với những đối tượng tạo ra với dữ liệu runtime, ví dụ
+     *      dựa theo số lượng request tới để tính liệu sẽ gọi tới FPT hay VNPT, nếu ít
+     *      hơn 1000 thì gọi tới FPT nếu nhiều hơn 1000 thì gọi VNPT, ...
+
+     * - Factory Pattern có thể được sử dụng trong nhiều tình huống khác nhau để
+     *       tạo và quản lý đối tượng một cách linh hoạt và dễ dàng mở rộng.
      */
 
     public static void main(String[] args) {
