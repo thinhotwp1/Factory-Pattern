@@ -10,6 +10,6 @@ package FactoryPattern.Pizza;
  */
 public class VeggiePizzaNY extends Pizza{
     public VeggiePizzaNY() {
-        description = "VeggiePizzaNY";
+        description = "Veggie PizzaNY";
     }
 }

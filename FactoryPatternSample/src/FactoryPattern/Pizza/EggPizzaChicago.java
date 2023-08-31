@@ -11,13 +11,14 @@ package FactoryPattern.Pizza;
 public class EggPizzaChicago extends Pizza{
 
     public EggPizzaChicago() {
-        description = "EggPizzaChicago";
+        description = "Egg Pizza Chicago";
     }
     
     @Override
     public void box() {
-        this.description += " + 2 box ";
+        this.description += " + Gói cẩn thận hàng dễ hỏng  ";
         /* các method ít sửa đổi được gom vào class Pizza nếu 
         cần thay đổi thì chỉ cần overide */
     }
+
 }

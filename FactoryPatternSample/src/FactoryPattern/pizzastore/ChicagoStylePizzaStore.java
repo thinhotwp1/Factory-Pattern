@@ -4,33 +4,26 @@
  */
 package FactoryPattern.pizzastore;
 
-import FactoryPattern.Pizza.CheesePizzaNY;
-import FactoryPattern.Pizza.CocaPizzaChicago;
-import FactoryPattern.Pizza.EggPizzaChicago;
-import FactoryPattern.Pizza.Pizza;
-import FactoryPattern.Pizza.VeggiePizzaNY;
+import FactoryPattern.Pizza.*;
 
 /**
  *
  * @author ThinhLD
  */
-public class ChicagoStylePizzaStore extends PizzaStore {
+public class ChicagoStylePizzaStore extends PizzaStore {// Tùy chọn loại bánh pizza sẽ tạo ra ở nhà máy Chicago bằng cách implement createPizza
 
     public ChicagoStylePizzaStore() {
     }
 
-    public Pizza createPizza(String type) {
+    public Pizza createPizza(PizzaType type) {
 
         Pizza pizza;
-        switch (type) {
-            case "egg":
-                pizza = new EggPizzaChicago();
-                break;
-            case "coca":
-                pizza = new CocaPizzaChicago();
-                break;
-            default:
-                return null;
+        if (type.equals(PizzaType.EGG_PIZZA)) {
+            pizza = new EggPizzaChicago();
+        } else if (type.equals(PizzaType.COCA_PIZZA)) {
+            pizza = new CocaPizzaChicago();
+        } else {
+            return null;
         }
 
         return pizza;

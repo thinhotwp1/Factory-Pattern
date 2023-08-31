@@ -6,28 +6,27 @@ package FactoryPattern.pizzastore;
 
 import FactoryPattern.Pizza.CheesePizzaNY;
 import FactoryPattern.Pizza.Pizza;
+import FactoryPattern.Pizza.PizzaType;
 import FactoryPattern.Pizza.VeggiePizzaNY;
 
 /**
  *
  * @author ThinhLD
  */
-public class NYStylePizzaStore extends PizzaStore {
+public class NYStylePizzaStore extends PizzaStore { // Tùy chọn loại bánh pizza sẽ tạo ra ở nhà máy NY bằng cách implement createPizza
 
     public NYStylePizzaStore() {
     }
 
-    public Pizza createPizza(String type) {
+    public Pizza createPizza(PizzaType type) {
         Pizza pizza;
-        switch (type) {
-            case "cheese":
-                pizza = new CheesePizzaNY();
-                break;
-            case "veggie":
-                pizza = new VeggiePizzaNY();
-                break;
-            default:
-                return null;
+
+        if (type.equals(PizzaType.CHEESE_PIZZA)) {
+            pizza = new CheesePizzaNY();
+        } else if (type.equals(PizzaType.VEGGIE_PIZZA)) {
+            pizza = new VeggiePizzaNY();
+        } else {
+            return null;
         }
 
         return pizza;
