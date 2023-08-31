@@ -1,6 +1,6 @@
 package FactoryPattern.config;
 
-public abstract class ConfigNetwork {
+public abstract class ConfigNetwork { // lớp cha của các lớp con muốn khởi tạo bằng factory
     private String name;
     private String description;
     private String speed;

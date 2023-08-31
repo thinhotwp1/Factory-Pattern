@@ -18,7 +18,6 @@ import FactoryPattern.factorynetwork.NetworkContains;
 public class FactoryPattern {
 
     /**
-     * @param args
      * - Factory pattern sample: DI-Dependency Injection
 
      * - Ngoài ra có thể sử dụng với những đối tượng tạo ra với dữ liệu runtime, ví dụ
