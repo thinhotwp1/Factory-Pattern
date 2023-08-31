@@ -1,8 +1,10 @@
 # Factory-Pattern
-Factory Pattern Sample
+Factory Pattern Sample + DI - Dependency Injection 
 
 Link drive:
+
 https://drive.google.com/drive/folders/1G37j6zV-WPexZ2dD2OIzMRJeG1KadAUt?usp=drive_link
+
 
 🔷 
 1. Pattern này giúp ẩn đi khởi tạo của các đối tượng con, bằng cách sử dụng các lớp abstract và class extends nó, có thể sử dụng chung hoặc sử dụng riêng method của các lớp cha và con (cũng là một lợi thế của factory pattern khi có nhiều method lặp lại ở các class extends). 
